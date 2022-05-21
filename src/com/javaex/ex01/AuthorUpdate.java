@@ -32,8 +32,8 @@ public class AuthorUpdate {
 			
 			//3-2. 바인딩 
 			pstmt = conn.prepareStatement(query);
-			pstmt.setString(1, "최문열");
-			pstmt.setString(2, "서울특별시");
+			pstmt.setString(1, "김문열");
+			pstmt.setString(2, "경북 영양");
 			pstmt.setInt(3, 1);
 			
 			//3-3. 실행
