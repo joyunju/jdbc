@@ -39,8 +39,8 @@ public class AuthorInsert {
 			pstmt = conn.prepareStatement(query);	//문자열을 쿼리로 만들기
 			// ? 물음표가 두개니까
 			//pstmt.setString(? 첫번째 자리에 들어갈 ,? 두번째 자리에 들어갈);
-			pstmt.setString(1,"박경리");		// ?(물음표) 중 1번째 --> 순서 중요
-			pstmt.setString(2,"경상남도 통영");	// ?(물음표) 중 2번째 --> 순서 중요
+			pstmt.setString(1,"유시민");		// ?(물음표) 중 1번째 --> 순서 중요
+			pstmt.setString(2,"17대 국회의원");	// ?(물음표) 중 2번째 --> 순서 중요
 			
 			//3. 실행
 			int count = pstmt.executeUpdate();			// 쿼리문 실행  --> 성공갯수 리턴
@@ -48,7 +48,6 @@ public class AuthorInsert {
 	
 			// 4.결과처리
 			System.out.println(count + "건이 등록 되었습니다.");
-			
 		} catch (ClassNotFoundException e) {
 			System.out.println("error: 드라이버 로딩 실패 - " + e);
 		} catch (SQLException e) {
