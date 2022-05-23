@@ -29,6 +29,7 @@ public class BookUpdate {
 			query += " pubs = ?, ";
 			query += " pub_date = ? ";
 			query += " WHERE author_id = ? ";
+			System.out.println(query);
 
 			// 3-2. 바인딩
 			pstmt = conn.prepareStatement(query);

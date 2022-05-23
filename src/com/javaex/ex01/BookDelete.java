@@ -24,13 +24,21 @@ public class BookDelete {
 			// 3. SQL문 준비 / 바인딩 / 실행
 
 			// 3-1. SQL문 준비
-						
+			String query = "";
+			query += " DELETE FROM book ";
+			query += " WHERE book_id = ? ";
+			System.out.println(query);
+			
 			// 3-2. 바인딩
-						
+			pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, 5);
+			
 			//3-3. 실행
-						
+			int count = pstmt.executeUpdate();			
 			
 			// 4.결과처리
+			System.out.println(count + "건이 삭제 되었습니다.");
+			
 		} catch (ClassNotFoundException e) {
 			System.out.println("error: 드라이버 로딩 실패 - " + e);
 		} catch (SQLException e) {
