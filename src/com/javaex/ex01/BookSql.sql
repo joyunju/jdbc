@@ -74,7 +74,8 @@ SELECT
     bo.book_id,
     bo.title,
     bo.pubs,
-    bo.pub_date,
+    --bo.pub_date,
+    to_char(bo.pub_date, 'YYYY-MM-DD') "pub_date",
     bo.author_id,
     au.author_name,
     au.author_desc
