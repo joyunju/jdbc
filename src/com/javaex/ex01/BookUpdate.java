@@ -1,6 +1,7 @@
 package com.javaex.ex01;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -18,7 +19,17 @@ public class BookUpdate {
 			
 			
 			// 2. Connection 얻어오기
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+			conn = DriverManager.getConnection(url, "webdb", "webdb");
+			
 			// 3. SQL문 준비 / 바인딩 / 실행
+			// 3-1. SQL문 준비
+						
+			// 3-2. 바인딩
+						
+			//3-3. 실행
+						
+			
 			// 4.결과처리
 		} catch (ClassNotFoundException e) {
 			System.out.println("error: 드라이버 로딩 실패 - " + e);
