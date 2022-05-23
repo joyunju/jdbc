@@ -34,10 +34,10 @@ public class BookInsert {
 			
 			// 3-2. 바인딩
 			pstmt = conn.prepareStatement(query);
-			pstmt.setString(1, "유시민의 글쓰기 특강");
-			pstmt.setString(2, "생각의길");
-			pstmt.setString(3, "2015-04-01");
-			pstmt.setInt(4, 3);
+			pstmt.setString(1, "패션왕");
+			pstmt.setString(2, "중앙북스(books)");
+			pstmt.setString(3, "2012/02/22");
+			pstmt.setInt(4, 4);
 			
 			//3-3. 실행
 			int count = pstmt.executeUpdate();			// 쿼리문 실행  --> 성공갯수 리턴
