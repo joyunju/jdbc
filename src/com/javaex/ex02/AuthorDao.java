@@ -9,8 +9,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.javaex.ex04.AuthorVo;
-
 /*************************
  * DAO(Data Access Object) DataBase(오라클) 관련된 일을 하는 클래스
  **************************/

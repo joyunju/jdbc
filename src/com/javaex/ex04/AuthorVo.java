@@ -9,15 +9,17 @@ public class AuthorVo {
 
 	// 생성자
 	public AuthorVo() {
+
 	}
 
 	public AuthorVo(int authorId, String authorName, String authorDesc) {
+		super();
 		this.authorId = authorId;
 		this.authorName = authorName;
 		this.authorDesc = authorDesc;
 	}
 
-	// 메소드 gs
+	// 메소드 - gs
 	public int getAuthorId() {
 		return authorId;
 	}
@@ -47,4 +49,5 @@ public class AuthorVo {
 	public String toString() {
 		return "AuthorVo [authorId=" + authorId + ", authorName=" + authorName + ", authorDesc=" + authorDesc + "]";
 	}
+
 }
