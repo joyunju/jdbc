@@ -19,6 +19,12 @@ public class AuthorApp {
 		
 //		AuthorVo authorVo = new AuthorVo("이문열", "경북영양");
 //		authorDao.authorInsert(authorVo);
+		
+		AuthorVo authorVo = new AuthorVo("정우성", "영화배우");
+//		authorVo.setAuthorDesc("정우성");
+//		authorVo.setAuthorDesc("영화배우");
+		authorDao.authorInsert(authorVo);
+		
 
 //		 int iCount = authorDao.authorInsert("박경리", "경상남도 통영");
 //		 
